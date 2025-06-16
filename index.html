@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Card - Valorant</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/slider-elos.css">
+    <link rel="stylesheet" href="styles/card-jogador.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <main class="container">
+        <section class="criador-de-card">
+            <div class="camada-1-criador">
+                <h1 class="titulo-criador">Criador de Card Valorant</h1>
+                <p class="descricao-criador">Crie sua cartinha de jogador para o valorant e descubra o quão valioso você é!</p>
+            </div>
+            <hr class="divisor">
+            <form action="/">
+                <div class="camada-2-criador">
+                    <h2 class="subtitulo-criador">Dados do Jogador</h2>
+                    <div class="organizador-input">
+        
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="nickname">Nickname</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-nickname" id="nickname" placeholder="Insira seu nickname" autocomplete="off">
+                                <i class='bx bx-face'></i>
+                            </div>
+                        </div>
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="funcao">Função</label>
+                            <div class="borda-input">
+                                <select class="padrao-select" name="name-funcao" id="funcao">
+                                    <option value="Iniciador">Iniciador</option>
+                                    <option value="Controlador">Controlador</option>
+                                    <option value="Sentinela">Sentinela</option>
+                                    <option value="Duelista">Duelista</option>
+                                    <option value="Flex">Flex</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="subtitulo-criador">Selecione seu elo</h2>
+                    <!-- Carrosel Elos -->
+                    <div class="elos-valorant">
+                        <div id="botaoEloEsquerdo" class="icon"><i class='bx bx-chevron-left'></i></div>
+                        <ul class="carrosel-elos">
+                            <!-- Sem Rank -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/semRank.png" alt="Sem Rank" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Sem Rank</h3>
+                                <p class="descricao-elo regressao-pontos">-1 Pontos de Overall</p>
+                                <input type="radio" name="nome-semrank" id="semrank">
+                            </li>
+                            <!-- Ferro 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ferro1.png" alt="Ferro 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ferro 1</h3>
+                                <p class="descricao-elo regressao-pontos">-0.9 Pontos de Overall</p>
+                                <input type="radio" name="nome-ferro1" id="ferro1">
+                            </li>
+                            <!-- Ferro 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ferro2.png" alt="Ferro 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ferro 2</h3>
+                                <p class="descricao-elo regressao-pontos">-0.8 Pontos de Overall</p>
+                                <input type="radio" name="nome-ferro2" id="ferro2">
+                            </li>
+                            <!-- Ferro 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ferro3.png" alt="Ferro 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ferro 3</h3>
+                                <p class="descricao-elo regressao-pontos">-0.7 Pontos de Overall</p>
+                                <input type="radio" name="nome-ferro3" id="ferro3">
+                            </li>
+                            <!-- Bronze 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/bronze1.png" alt="Bronze 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Bronze 1</h3>
+                                <p class="descricao-elo regressao-pontos">-0.6 Pontos de Overall</p>
+                                <input type="radio" name="nome-bronze1" id="bronze1">
+                            </li>
+                            <!-- Bronze 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/bronze2.png" alt="Bronze 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Bronze 2</h3>
+                                <p class="descricao-elo regressao-pontos">-0.5 Pontos de Overall</p>
+                                <input type="radio" name="nome-bronze2" id="bronze2">
+                            </li>
+                            <!-- Bronze 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/bronze3.png" alt="Bronze 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Bronze 3</h3>
+                                <p class="descricao-elo regressao-pontos">-0.4 Pontos de Overall</p>
+                                <input type="radio" name="nome-bronze3" id="bronze3">
+                            </li>
+                            <!-- Prata 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/prata1.png" alt="Prata 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Prata 1</h3>
+                                <p class="descricao-elo regressao-pontos">-0.3 Pontos de Overall</p>
+                                <input type="radio" name="nome-prata1" id="prata1">
+                            </li>
+                            <!-- Prata 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/prata2.png" alt="Prata 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Prata 2</h3>
+                                <p class="descricao-elo regressao-pontos">-0.2 Pontos de Overall</p>
+                                <input type="radio" name="nome-prata2" id="prata2">
+                            </li>
+                            <!-- Prata 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/prata3.png" alt="Prata 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Prata 3</h3>
+                                <p class="descricao-elo regressao-pontos">-0.1 Pontos de Overall</p>
+                                <input type="radio" name="nome-prata3" id="prata3">
+                            </li>
+                            <!-- Ouro 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ouro1.png" alt="Ouro 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ouro 1</h3>
+                                <p class="descricao-elo regressao-pontos">0 Pontos de Overall</p>
+                                <input type="radio" name="nome-ouro1" id="ouro1">
+                            </li>
+                            <!-- Ouro 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ouro2.png" alt="Ouro 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ouro 2</h3>
+                                <p class="descricao-elo">+0.5 Pontos de Overall</p>
+                                <input type="radio" name="nome-ouro2" id="ouro2">
+                            </li>
+                            <!-- Ouro 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ouro3.png" alt="Ouro 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ouro 3</h3>
+                                <p class="descricao-elo">+0.7 Pontos de Overall</p>
+                                <input type="radio" name="nome-ouro3" id="ouro3">
+                            </li>
+                            <!-- Platina 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/platina1.png" alt="Platina 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Platina 1</h3>
+                                <p class="descricao-elo">+1 Pontos de Overall</p>
+                                <input type="radio" name="nome-platina1" id="platina1">
+                            </li>
+                            <!-- Platina 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/platina2.png" alt="Platina 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Platina 2</h3>
+                                <p class="descricao-elo">+1.5 Pontos de Overall</p>
+                                <input type="radio" name="nome-platina2" id="platina2">
+                            </li>
+                            <!-- Platina 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/platina3.png" alt="Platina 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Platina 3</h3>
+                                <p class="descricao-elo">+1.7 Pontos de Overall</p>
+                                <input type="radio" name="nome-platina3" id="platina3">
+                            </li>
+                            <!-- Diamante 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/diamante1.png" alt="Diamante 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Diamante 1</h3>
+                                <p class="descricao-elo">+2 Pontos de Overall</p>
+                                <input type="radio" name="nome-diamante1" id="diamante1">
+                            </li>
+                            <!-- Diamante 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/diamante2.png" alt="Diamante 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Diamante 2</h3>
+                                <p class="descricao-elo">+2.5 Pontos de Overall</p>
+                                <input type="radio" name="nome-diamante2" id="diamante2">
+                            </li>
+                            <!-- Diamante 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/diamante3.png" alt="Diamante 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Diamante 3</h3>
+                                <p class="descricao-elo">+2.7 Pontos de Overall</p>
+                                <input type="radio" name="nome-diamante3" id="diamante3">
+                            </li>
+                            <!-- Ascendente 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ascendente1.png" alt="Ascendente 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ascendente 1</h3>
+                                <p class="descricao-elo">+3 Pontos de Overall</p>
+                                <input type="radio" name="nome-ascendente1" id="ascendente1">
+                            </li>
+                            <!-- Ascendente 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ascendente2.png" alt="Ascendente 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ascendente 2</h3>
+                                <p class="descricao-elo">+3.5 Pontos de Overall</p>
+                                <input type="radio" name="nome-ascendente2" id="ascendente2">
+                            </li>
+                            <!-- Ascendente 3 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/ascendente3.png" alt="Ascendente 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Ascendente 3</h3>
+                                <p class="descricao-elo">+3.7 Pontos de Overall</p>
+                                <input type="radio" name="nome-ascendente3" id="ascendente3">
+                            </li>
+                            <!-- Imortal 1 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/imortal1.png" alt="Imortal 1" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Imortal 1</h3>
+                                <p class="descricao-elo">+4 Pontos de Overall</p>
+                                <input type="radio" name="nome-imortal1" id="imortal1">
+                            </li>
+                            <!-- Imortal 2 -->
+                            <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/imortal2.png" alt="Imortal 2" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Imortal 2</h3>
+                                <p class="descricao-elo">+4 Pontos de Overall</p>
+                                <input type="radio" name="nome-imortal2" id="imortal2">
+                            </li>
+                              <!-- Imortal 3 -->
+                              <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/imortal3.png" alt="Imortal 3" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Imortal 3</h3>
+                                <p class="descricao-elo">+4 Pontos de Overall</p>
+                                <input type="radio" name="nome-imortal3" id="imortal3">
+                            </li>
+                             <!-- Radiante -->
+                             <li class="card-elo">
+                                <div class="imagem-elo">
+                                    <img src="images/elos/radiante.png" alt="Radiante" draggable="false">
+                                </div>
+                                <h3 class="titulo-elo">Radiante</h3>
+                                <p class="descricao-elo">+5 Pontos de Overall</p>
+                                <input type="radio" name="nome-radiante" id="radiante">
+                            </li>
+                        </ul>
+                        <div id="botaoEloDireito" class="icon"><i class='bx bx-chevron-right'></i></div>
+                    </div>
+                </div>
+                <div class="camada-3-criador">
+                    <h2 class="subtitulo-criador">Selecione seu Agente</h2>
+                    <div class="seletor-de-agentes">
+                        <div class="agente-box">
+                            <button id="btn-astra" class="botao-agente">
+                                <img class="astra-img" src="" alt="Astra" draggable="false">
+                            </button>
+        
+                            <button id="btn-breach" class="botao-agente">
+                                <img class="breach-img" src="" alt="Breach" draggable="false">
+                            </button>
+        
+                            <button id="btn-brimstone" class="botao-agente">
+                                <img class="brimstone-img" src="" alt="Brimstone" draggable="false">
+                            </button>
+        
+                            <button id="btn-chamber" class="botao-agente">
+                                <img class="chamber-img" src="" alt="Chamber" draggable="false">
+                            </button>
+        
+                            <button id="btn-clove" class="botao-agente">
+                                <img class="clove-img" src="" alt="Clove" draggable="false">
+                            </button>
+        
+                            <button id="btn-cypher" class="botao-agente">
+                                <img class="cypher-img" src="" alt="Cypher" draggable="false">
+                            </button>
+        
+        
+                        </div>
+                        <div class="agente-box">
+        
+                            <button id="btn-deadlock" class="botao-agente">
+                                <img class="deadlock-img" src="" alt="Deadlock" draggable="false">
+                            </button>
+        
+                            <button id="btn-fade" class="botao-agente">
+                                <img class="fade-img" src="" alt="Fade" draggable="false">
+                            </button>
+        
+                            <button id="btn-gekko" class="botao-agente">
+                                <img class="gekko-img" src="" alt="Gekko" draggable="false">
+                            </button>
+        
+                            <button id="btn-harbor" class="botao-agente">
+                                <img class="harbor-img" src="" alt="Harbor" draggable="false">
+                            </button>
+        
+                            <button id="btn-iso" class="botao-agente">
+                                <img class="iso-img" src="" alt="Iso" draggable="false">
+                            </button>
+        
+                            <button id="btn-jett" class="botao-agente">
+                                <img class="jett-img" src="" alt="Jett" draggable="false">
+                            </button>
+                        </div>
+                        <div class="agente-box">
+                            <button id="btn-kayo" class="botao-agente">
+                                <img class="kayo-img" src="" alt="KAY/O" draggable="false">
+                            </button>
+        
+                            <button id="btn-killjoy" class="botao-agente">
+                                <img class="killjoy-img" src="" alt="Killjoy" draggable="false">
+                            </button>
+        
+                            <button id="btn-neon" class="botao-agente">
+                                <img class="neon-img" src="" alt="Neon" draggable="false">
+                            </button>
+        
+                            <button id="btn-omen" class="botao-agente">
+                                <img class="omen-img" src="" alt="Omen" draggable="false">
+                            </button>
+        
+                            <button id="btn-phoenix" class="botao-agente">
+                                <img class="phoenix-img" src="" alt="Phoenix" draggable="false">
+                            </button>
+        
+                            <button id="btn-raze" class="botao-agente">
+                                <img class="raze-img" src="" alt="Raze" draggable="false">
+                            </button>
+                        </div>
+                        <div class="agente-box">
+                            <button id="btn-reyna" class="botao-agente">
+                                <img class="reyna-img" src="" alt="Reyna" draggable="false">
+                            </button>
+        
+                            <button id="btn-sage" class="botao-agente">
+                                <img class="sage-img" src="" alt="Sage" draggable="false">
+                            </button>
+        
+                            <button id="btn-skye" class="botao-agente">
+                                <img class="skye-img" src="" alt="Skye" draggable="false">
+                            </button>
+        
+                            <button id="btn-sova" class="botao-agente">
+                                <img class="sova-img" src="" alt="Sova" draggable="false">
+                            </button>
+        
+                            <button id="btn-viper" class="botao-agente">
+                                <img class="viper-img" src="" alt="Viper" draggable="false">
+                            </button>
+        
+                            <button id="btn-yoru" class="botao-agente">
+                                <img class="yoru-img" src="" alt="Yoru" draggable="false">
+                            </button>
+                        </div>
+
+                        <div class="agente-box">
+                            <button id="btn-waylay" class="botao-agente">
+                                <img class="waylay-img" src="" alt="waylay" draggable="false">
+                            </button>
+                            <button id="btn-vyse" class="botao-agente">
+                                <img class="vyse-img" src="" alt="vyse" draggable="false">
+                            </button>
+                            <button id="btn-tejo" class="botao-agente">
+                                <img class="tejo-img" src="" alt="tejo" draggable="false">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="camada-4-criador">
+                    <h2 class="subtitulo-criador">Insira suas pontuações</h3>
+                    <p class="subdescricao-criador">Veja suas pontuações individuais <a class="link-externo" href="https://tracker.gg/valorant" rel="external" target="_blank">clicando aqui<i class='bx bx-link-external'></i> </a></p>
+        
+                    <div class="organizador-input">
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="kast">KAST</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-kast" id="kast" placeholder="Insira seu kast (0.0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="acs">ACS</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-acs" id="acs" placeholder="Insira seu acs (0.0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizador-input">
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="adr">ADR</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-adr" id="adr" placeholder="Insira seu adr (0.0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="dda">DDA</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-dda" id="dda" placeholder="Insira seu dda (0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="organizador-input">
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="kdr">KDR</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-kdr" id="kdr" placeholder="Insira seu kdr (0.0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                        <div class="caixa-input">
+                            <label class="padrao-label" for="hsr">HSR</label>
+                            <div class="borda-input">
+                                <input class="padrao-input" type="text" name="name-hsr" id="hsr" placeholder="Insira seu hsr (0.0)" autocomplete="off">
+                                <i class='bx bxs-bolt'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camada-5-criador">
+                    <h2 class="subtitulo-criador">A sua foto</h2>
+                    <p class="subdescricao-criador">Para um melhor resultado, utilize fotos com fundos claros.</p>
+                    <button class="btn-upload-foto">
+                        Enviar Imagem <i class='bx bx-upload'></i>
+                    </button>
+                    <input type="file" id="foto-jogador" style="display:none;">
+                </div>
+                <div class="camada-6-criador">
+                    <div class="btn-border">
+                        <button class="botao-gerar-card" id="btn-gerar-card">Gerar Card do Jogador</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="card-jogador" style="display: none;">
+            <div class="card-camada-1">
+                <h1 class="titulo-card">Seu Card de Jogador</h1>
+            </div>
+            <hr class="divisor">
+            <div class="cartinha">
+                <div class="camada-1-cartinha">
+                    <img class="vlr-logo" src="images/valorant.png" alt="valorant logo">
+                </div>
+                <div class="camada-2-cartinha">
+                    <div class="overall-area">
+                        <p class="overall-cartinha">83</p>
+                        <i id="desceu" class='bx bx-chevrons-down' style="display: none;"></i>
+                        <i id="subiu" class='bx bx-chevrons-up' style="display: none;"></i>
+                        <i id="manteve" class='bx bx-pause' style="display: none;"></i>
+                    </div>
+                    <div class="divisor-vertical"></div>
+                    <div>
+                        <p class="nickname-cartinha">gr3zze</p>
+                        <p class="funcao-e-agente-cartinha"><span class="funcao-cartinha">Controlador </span>| <span class="agente-cartinha">Clove</span></p>
+                    </div>
+                    <img class="elo-cartinha" src="images/elos/diamante1.png" alt="Elo Jogador">
+                </div>
+                <div class="camada-3-cartinha">
+                    <div class="organizador-stats">
+                        <div class="stats-box">
+                            <p id="kast-cartinha" class="stats-value">70%</p>
+                            <p class="stats-name">KAST</p>
+                        </div>
+                        <div class="stats-box">
+                            <p id="acs-cartinha" class="stats-value">237</p>
+                            <p class="stats-name">ACS</p>
+                        </div>
+                    </div>
+                    <div class="divisor-vertical"></div>
+                    <div class="organizador-stats">
+                        <div class="stats-box">
+                            <p id="adr-cartinha" class="stats-value">151</p>
+                            <p class="stats-name">ADR</p>
+                        </div>
+                        <div class="stats-box">
+                            <p id="dda-cartinha" class="stats-value">-5</p>
+                            <p class="stats-name">DDA</p>
+                        </div>
+                    </div>
+                    <div class="divisor-vertical"></div>
+                    <div class="organizador-stats">
+                        <div class="stats-box">
+                            <p id="kdr-cartinha" class="stats-value">0.96</p>
+                            <p class="stats-name">K/D</p>
+                        </div>
+                        <div class="stats-box">
+                            <p id="hsr-cartinha" class="stats-value">29%</p>
+                            <p class="stats-name">HS</p>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <hr class="divisor">
+            <button class="btn-voltar">Voltar</button>
+        </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

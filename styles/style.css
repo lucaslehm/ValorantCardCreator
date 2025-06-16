@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font1: "Poppins", sans-serif;
+    --cor1: #0F141A;
+    --cor2: #1B2733;
+    --cor3: #FF4655;
+}
+
+.countainer {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+    padding: 4em;
+}
+
+.criador-de-card {
+    background-color: var(--cor2);
+    width: 800px;
+    padding: 2em;
+    border-top: solid 1px #f5deb31e;
+    border-radius: 10px;
+    margin-bottom: 5em;
+}
+
+.titulo-criador {
+    font-family: var(--font1);
+    color: var(--cor3);
+    font-size: 2em;
+}
+
+.descricao-criador {
+    font-family: var(--font1);
+    color: white;
+}
+
+.divisor {
+    margin: 2em 0em;
+    border: none;
+    border-top: solid 1px #f5deb31e;
+    border-radius: 10px;
+}
+
+.subtitulo-criador {
+    font-family: var(--font1);
+    color: var(--cor3);
+    margin-bottom: 1em;
+}
+
+.camada-2-criador {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.organizador-input {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.caixa-input {
+    width: 100%;
+}
+
+.padrao-label {
+    font-family: var(--font1);
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.borda-input {
+    border: solid 1px var(--cor3);
+    padding: 1em;
+    border-radius: 7px;
+    margin-top: 0.5em;
+    display: flex;
+    gap: 1em;
+}
+
+.borda-input i {
+    color: white;
+}
+
+.padrao-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+}
+
+.padrao-select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+}
+
+.padrao-select:hover,
+.padrao-select:active,
+.padrao-select:focus,
+.padrao-select:focus-within {
+    background-color: var(--cor2);
+}
+
+.camada-3-criador {
+    margin-top: 2em;
+}
+
+.agente-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+}
+
+.botao-agente {
+    border: none;
+    background-color: var(--cor1);
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    border-top: solid 1px #f5deb31e;
+    transition: all 0.3s ease-in;
+}
+
+.botao-agente.selecionado {
+    background-image: linear-gradient(to top, var(--cor3), transparent);
+    border-top: none;
+    box-shadow: 0 0 50px #ff46567a;
+    border: solid 2px var(--cor3);
+}
+
+.botao-agente.selecionado:hover {
+    background-color: var(--cor3);
+}
+
+.botao-agente:hover {
+    background-color: #ff465638;
+}
+
+.botao-agente img {
+    width: 90px;
+}
+
+.subdescricao-criador {
+    font-family: var(--font1);
+    color: white;
+    font-size: 0.9em;
+    margin-top: -1.1em;
+    margin-bottom: 2em;
+}
+
+.link-externo {
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link-externo:hover {
+    text-decoration: underline;
+    color: #ff707c;
+}
+
+.link-externo i {
+    margin-left: 0.2em;
+}
+
+.camada-6-criador {
+    display: flex;
+    justify-content: center;
+}
+
+
+.camada-5-criador {
+    margin-bottom: 5em;
+}
+.btn-upload-foto {
+    margin-top: -1em;
+    border: none;
+    background-color: var(--cor3);
+    font-family: var(--font1);
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.btn-upload-foto:hover {
+    background-color: var(--cor1);
+    cursor: pointer;
+}
+
+.botao-gerar-card {
+    border: none;
+    background-color: var(--cor3);
+    font-family: var(--font1);
+    color: white;
+    padding: 20px 80px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+
+.botao-gerar-card[disabled] {
+    background-color: #ff46562f;
+}
+
+.botao-gerar-card[disabled]:hover {
+    background-color: #ff46562f;
+    cursor: default;
+}
+
+.botao-gerar-card:hover {
+    background-color: var(--cor1);
+    cursor: pointer;
+}
+
+.btn-border {
+    display: flex;
+    justify-content: center;
+    border: solid 1px #ffffff36;
+    width: fit-content;
+    padding: 6px;
+}
+
+.erro {
+    font-family: var(--font1);
+    color: var(--cor3);
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
