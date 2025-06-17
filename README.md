@@ -23,7 +23,8 @@ A personal project made for me and my friends to create our own Valorant player 
 - Elo Selection via Interactive Carousel: The user can select their current elo in Valorant through a carousel with horizontal scroll or navigation buttons (left/right). Each elo impacts the final overall score.
 - Agent Selection: Displays the list of all Valorant agents (data pulled from ValorantAPI), with dynamic images updated via API. The user can select their favorite agent by clicking on the image.
 - Performance Statistics Insertion: Allows the filling of individual player statistics, such as: KAST, ACS, ADR, DDA, K/D, HSR. This information is used to calculate the overall.
-- Custom Image Upload: The user can upload a photo of themselves to be displayed as the card's background image. - Automatic Overall Calculation: The project calculates the player's final Overall based on the entered statistics + bonuses for the chosen elo. The weights of each statistic are defined in the code and balanced to generate a score from 0 to 99.
+- Custom Image Upload: The user can upload a photo of themselves to be displayed as the card's background image.
+- Automatic Overall Calculation: The project calculates the player's final Overall based on the entered statistics + bonuses for the chosen elo. The weights of each statistic are defined in the code and balanced to generate a score from 0 to 99.
 - Dynamic Generation of Player Cards: After filling in the data and clicking on "Generate Card", the project displays the finished card with a layout inspired by EA player cards (FIFA/FC), showing: Name, Role, Agent, Elo (with image), Overall, Detailed Statistics
 - Reset/Back Button: After viewing the final card, the user can click on "Back" to return to the form and create another card.
 
