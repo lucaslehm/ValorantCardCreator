@@ -35,7 +35,7 @@ A personal project made for me and my friends to create our own Valorant player 
 - [ValorantAPI](https://valorant-api.com/)
 
 ## 🔗 Link do Projeto Online:
-- Ainda não publicado :(
+- [Vercel](https://valorant-card-creator.vercel.app/)
 
 ## 📸 Preview:
 ![Screenshot](https://i.ibb.co/4R8xKtPn/Captura-de-tela-2025-06-17-195424.png)
